@@ -1,3 +1,4 @@
+
 // This file configures the initialization of Sentry on the client.
 // The added config here will be used whenever a users loads a page in their browser.
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
@@ -5,7 +6,7 @@
 import * as Sentry from "@sentry/nextjs";
 
 Sentry.init({
-  dsn: "https://5a5ad5d9846faece0a4727540f810281@o4510149980258304.ingest.de.sentry.io/4510621155983440",
+  dsn: "https://aa3f50872e69ad56da59186680bf871c@o4511250733989888.ingest.de.sentry.io/4511251580846160",
 
   // Add optional integrations for additional features
   integrations: [Sentry.replayIntegration()],
