@@ -6,7 +6,7 @@
 import * as Sentry from "@sentry/nextjs";
 
 Sentry.init({
-  dsn: "https://5a5ad5d9846faece0a4727540f810281@o4510149980258304.ingest.de.sentry.io/4510621155983440",
+  dsn: "https://aa3f50872e69ad56da59186680bf871c@o4511250733989888.ingest.de.sentry.io/4511251580846160",
 
   // Define how likely traces are sampled. Adjust this value in production, or use tracesSampler for greater control.
   tracesSampleRate: 1,
@@ -19,7 +19,6 @@ Sentry.init({
   sendDefaultPii: true,
   integrations: [
     Sentry.vercelAIIntegration,
-    // send console.log, console.warn, and console.error calls as logs to Sentry
     Sentry.consoleLoggingIntegration({ levels: ["log", "warn", "error"] }),
-  ],
+  ]
 });

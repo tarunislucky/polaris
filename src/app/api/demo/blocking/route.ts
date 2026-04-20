@@ -1,10 +1,10 @@
 // POST localhost:3000/api/demo/blocking
 import { generateText } from "ai";
-import { anthropic } from "@ai-sdk/anthropic";
+import { google } from "@ai-sdk/google";
 
 export async function POST() {
   const response = await generateText({
-    model: anthropic('claude-3-haiku-20240307'),
+    model: google(process.env.GOOGLE_AI_MODEL!),
     prompt: 'Write a vegetarian lasagna recipe for 4 people.',
     experimental_telemetry: {
       isEnabled: true,
